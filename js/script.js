@@ -53,9 +53,10 @@ countdownBtn.onclick = function () {
         clearInterval(intervalId);
     }
 
+    // get the countdown number from the user
     var countdownInput = document.querySelector('input');
     // "value" only works on input tags
-    var countdownNumber = countdownNumber.value;
+    var countdownNumber = countdownInput.value;
 
     var countFeedback = document.querySelector('.count');
     // update DOM with initial count
@@ -80,7 +81,7 @@ countdownBtn.onclick = function () {
         },
         1000
       );
-};
+};  // end onclick
 
 
 var countStopBtn = document.querySelector('.count-stop');
